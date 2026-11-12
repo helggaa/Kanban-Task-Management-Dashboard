@@ -4,9 +4,9 @@ A modern, responsive Kanban board web application built with React, TypeScript, 
 
 ## Screenshots
 
-| Kanban Dashboard | Authentication Page |
-|:---:|:---:|
-| ![Kanban Dashboard](./screenshot-dashboard.png) | ![Login Page](./screenshot-login.png) |
+| Kanban Dashboard | Kanban Board View | Authentication Page |
+|:---:|:---:|:---:|
+| ![Kanban Dashboard](./screenshot-dashboard.png) | ![Kanban Board](./screenshot-kanban.png) | ![Login Page](./screenshot-login.png) |
 
 ## Features
 
@@ -51,6 +51,12 @@ cd "Kanban Task Management Dashboard"
 # Install dependencies
 npm install
 ```
+
+### Environment Configuration
+
+No `.env` file is required. The application works out of the box with:
+- **Authentication API**: `https://dummyjson.com` (configured in `src/api/axios.ts`)
+- **Persistence Storage**: Browser `localStorage` (keys: `token`, `refreshToken`, `kanban_tasks`)
 
 ### Running Locally
 
